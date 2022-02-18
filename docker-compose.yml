@@ -1,0 +1,15 @@
+version: '3'
+services:
+  homepage:
+    container_name: 'homepage'
+    image: homepage
+    restart: always
+    ports:
+      - '13400:3000'
+    # volumes:
+    #   - './:/app'
+
+networks:
+  default:
+    external:
+      name: https

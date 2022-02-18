@@ -1,7 +1,11 @@
 <template>
   <footer>
     <div class="footer-wrap">
-      hello footer
+      <ul class="grid grid-cols-3">
+        <FooterAbout />
+        <FooterLinks />
+        <FooterContacts />
+      </ul>
       <FooterCopyRight />
     </div>
   </footer>

@@ -2,6 +2,7 @@
   <div>
     <HeaderNav />
     <slot></slot>
+    <FooterDefault />
   </div>
 </template>
 

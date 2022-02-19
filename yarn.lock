@@ -584,6 +584,13 @@
     tailwindcss "^2.2.2"
     ufo "^0.7.5"
 
+"@pinia/nuxt@^0.1.8":
+  version "0.1.8"
+  resolved "https://registry.npmmirror.com/@pinia/nuxt/-/nuxt-0.1.8.tgz#457a87b0f39ae47a1306e08ab7d4d390b30b48c9"
+  integrity sha512-+M1GH/4XQdooOulPL7aYzli6UE1R5rWJtgcPhx2/97yYRLhKZvuIT33OauUCjYZ+tQVs8lyKfzt6S2agqzcmWg==
+  dependencies:
+    vue-demi "*"
+
 "@polka/url@^1.0.0-next.20":
   version "1.0.0-next.21"
   resolved "https://registry.npmmirror.com/@polka/url/-/url-1.0.0-next.21.tgz#5de5a2385a35309427f6011992b544514d559aa1"
@@ -925,7 +932,7 @@
     "@vue/compiler-dom" "3.2.31"
     "@vue/shared" "3.2.31"
 
-"@vue/devtools-api@^6.0.0-beta.18":
+"@vue/devtools-api@^6.0.0-beta.18", "@vue/devtools-api@^6.0.0-beta.21":
   version "6.0.12"
   resolved "https://registry.npmmirror.com/@vue/devtools-api/-/devtools-api-6.0.12.tgz#7b57cce215ae9f37a86984633b3aa3d595aa5b46"
   integrity sha512-iO/4FIezHKXhiDBdKySCvJVh8/mZPxHpiQrTy+PXVqJZgpTPTdHy4q8GXulaY+UKEagdkBb0onxNQZ0LNiqVhw==
@@ -4436,6 +4443,14 @@ pify@^5.0.0:
   resolved "https://registry.npmmirror.com/pify/-/pify-5.0.0.tgz#1f5eca3f5e87ebec28cc6d54a0e4aaf00acc127f"
   integrity sha512-eW/gHNMlxdSP6dmG6uJip6FXN0EQBwm2clYYd8Wul42Cwu/DK8HEftzsapcNdYe2MfLiIwZqsDk2RDEsTE79hA==
 
+pinia@^2.0.11:
+  version "2.0.11"
+  resolved "https://registry.npmmirror.com/pinia/-/pinia-2.0.11.tgz#ff03c714f5e5f16207280a4fc2eab01f3701ee2b"
+  integrity sha512-JzcmnMqu28PNWOjDgEDK6fTrIzX8eQZKPPKvu/fpHdpXARUj1xeVdFi3YFIMOWswqaBd589cpmAMdSSTryI9iw==
+  dependencies:
+    "@vue/devtools-api" "^6.0.0-beta.21"
+    vue-demi "*"
+
 pkg-dir@^4.1.0:
   version "4.2.0"
   resolved "https://registry.npmmirror.com/pkg-dir/-/pkg-dir-4.2.0.tgz#f099133df7ede422e81d1d8448270eeb3e4261f3"
@@ -5929,6 +5944,11 @@ vue-bundle-renderer@^0.3.5:
   integrity sha512-LmiGFvlK3ZVtUklpJKVmVkJcmpkLEHKE9YbSR6WgFULIikw3pusXhX3vZPkL9tGcjzBERVrB9CQYDGdWApnEJQ==
   dependencies:
     bundle-runner "^0.0.1"
+
+vue-demi@*:
+  version "0.12.1"
+  resolved "https://registry.npmmirror.com/vue-demi/-/vue-demi-0.12.1.tgz#f7e18efbecffd11ab069d1472d7a06e319b4174c"
+  integrity sha512-QL3ny+wX8c6Xm1/EZylbgzdoDolye+VpCXRhI2hug9dJTP3OUJ3lmiKN3CsVV3mOJKwFi0nsstbgob0vG7aoIw==
 
 vue-loader@^17.0.0:
   version "17.0.0"

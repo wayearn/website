@@ -4,6 +4,7 @@
     <ul class="">
       <li>地址：武汉市江汉区香江花园二期7栋</li>
       <li>邮箱：admin@wayearn.com</li>
+      <!-- <li>社交</li> -->
     </ul>
   </div>
 </template>

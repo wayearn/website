@@ -57,4 +57,8 @@ $spacers: (
     }
   }
 }
+
+.router-link-active {
+  @apply text-content;
+}
 </style>

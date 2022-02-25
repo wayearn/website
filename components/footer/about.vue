@@ -1,5 +1,5 @@
 <template>
-  <div class="p-5">
+  <div class="py-5 pr-10">
     <NuxtLink to="/about" class="block text-white text-lg pb-3 font-bold">
       关于为恩
     </NuxtLink>

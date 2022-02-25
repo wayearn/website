@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="footer-wrap">
+    <div class="footer-wrap w-9/12 my-0 mx-auto">
       <ul class="grid grid-cols-3">
         <FooterAbout />
         <FooterLinks />
@@ -31,7 +31,6 @@ footer {
   color: rgba(255, 255, 255, 0.65);
   box-shadow: 0 1000px 0 1000px #fff;
   .footer-wrap {
-    width: 100%;
     padding: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   }

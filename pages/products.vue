@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="bg h-[520px] w-screen"></div>
+    <div class="bg h-96 w-screen"></div>
     <div class="w-9/12 my-0 mx-auto">
       <div class="text-2xl pt-12 pb-6">TOIMC能力开放平台：TOIMC全业务赋能平台</div>
       <div
         class="line-clamp-5 text-content pb-10"
       >TOIMC能力开放平台是TOIMC全业务生态决策的中心，通过云计算、大数据、物联网、人工智能、移动互联网技术，为生态中各个业务参与者赋能。TOIMC这一能力面向TOIMC生态的合作伙伴开放，赋能生态伙伴的运营的标准化、智能化、数字化。</div>
-      <ul class="flex pb-4">
+      <ul class="flex justify-around pb-4">
         <li
           :class="['flex flex-col items-center', licls]"
           v-for="(item, index) in items"
@@ -21,7 +21,7 @@
       <div class="w-9/12 my-0 mx-auto text-white">
         <div class="text-2xl pt-12 pb-6">内容直播服务</div>
         <div
-          class="pb-10 w-1/2 text-xs leading-5"
+          class="pb-10 w-1/2 text-xs leading-tight"
         >TOIMC内容直播服务可为用户提供内容直播能力，服务易接入、高可用，只需简单几步就可以快速接入直播能力。通过使用横向扩展大规模并行处理 (MPP) 体系结构将数据仓库的数据扩展到千万亿字节级别,并且能够与 Hadoop 等非关系型数据源集成。为用户提供清晰流畅的音视频直播服务。</div>
       </div>
     </div>
@@ -38,38 +38,38 @@
         >
           <img class="h-4/5 pb-3 self-center" :src="item.url" alt />
           <div class="text-lg pb-3 font-bold">{{ item.title }}</div>
-          <div class="text-xs leading-5">{{ item.desc }}</div>
+          <div class="text-xs leading-tight">{{ item.desc }}</div>
         </li>
       </ul>
     </div>
     <div class="w-9/12 my-0 mx-auto">
       <div class="text-2xl pt-12 pb-8">内容审核开放能力</div>
-      <ul class="flex pb-4 text-content space-x-8">
+      <ul class="flex justify-around pb-4 text-content space-x-8">
         <li
           :class="['flex flex-col items-center', tagscls]"
           v-for="(item, index) in tags"
           :key="index"
         >
-          <img class="h-3/5 pb-3 self-center" :src="item.url" alt />
+          <img class="h-2/5 pb-3 self-center" :src="item.url" alt />
           <div class="text-lg pb-3 font-bold">{{ item.title }}</div>
-          <div class="text-xs leading-5">{{ item.desc }}</div>
+          <div class="text-xs leading-tight">{{ item.desc }}</div>
         </li>
       </ul>
     </div>
-    <div class="bg2 h-[520px] w-screen mb-10">
+    <div class="bg2 h-96 w-screen mb-10">
       <div class="w-9/12 my-0 mx-auto text-white">
         <div class="text-2xl pt-12 pb-6">大数据采集分析能力</div>
         <div
-          class="pb-10 w-1/3 text-xs leading-5"
+          class="pb-10 w-1/2 text-xs leading-tight"
         >打司机开采集及分析能力具有系统完善，操作便捷等特点，提供了数据采集、数据流转、行政管理等功能，实现了数据采集工作的智慧化化和数字化管理。可以对数据进行各种采样、清洗、分析，提供多种数据展现形式帮助用户直观的对数据进行查看，提供了处理参数修改等功能，可以对数据等多方面进行调节，提高办事效率和服务水平。</div>
       </div>
     </div>
-    <div class="w-9/12 my-0 mx-auto flex space-x-24">
-      <div class="bg3 h-[420px] w-1/3"></div>
-      <div class="px-32">
+    <div class="w-9/12 my-0 mx-auto flex space-x-12">
+      <div class="bg3 h-96 w-1/2"></div>
+      <div class="px-16">
         <div class="text-2xl pt-12 pb-6">TOIMC智能助手</div>
         <div
-          class="pb-10 pr-32 text-xs leading-5"
+          class="pb-10 pr-18 text-xs leading-tight"
         >TOIMC智能助手可帮助用户进行学习管理，科学规划学习计划，提供智能提醒服务。同时运用先进的跨平台技术，使得软件有较强的兼容性，可以让它在多平台、多设备上运行。</div>
       </div>
     </div>

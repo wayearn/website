@@ -1,7 +1,7 @@
 <template>
   <div class="p-5">
-    <div class="block text-white text-lg pb-3 font-bold">相关站点</div>
-    <ul class="text-sky-400">
+    <div class="block text-white text-sm pb-3 font-bold">相关站点</div>
+    <ul class="text-sky-400 text-xs">
       <li>
         <NuxtLink to="/products">解决方案</NuxtLink>
       </li>
@@ -18,7 +18,7 @@
 <script>
 export default {
   setup () {
-    
+
 
     return {}
   }

@@ -1,23 +1,37 @@
 <template>
-  <div class="w-screen leading-8">
-    <div class="w-9/12 my-0 mx-auto ">
+  <div class="w-screen leading-tight">
+    <swiper
+      :modules="modules"
+      :slides-per-view="1"
+      :space-between="50"
+      :pagination="{ clickable: true }"
+      @swiper="onSwiper"
+      @slideChange="onSlideChange"
+    >
+      <swiper-slide v-for="(item, index) in images" :key="index">
+        <img class="w-screen" :src="item" alt />
+      </swiper-slide>
+    </swiper>
+    <div class="w-9/12 my-0 mx-auto">
       <div class="text-3xl font-bold pt-8 pb-6">关于我们</div>
-      <div class="line-clamp-5 text-content pb-10">
-        武汉为恩科技公司成立于2018年3月，主要业务为数据分析、软件定制开发、信息化建设咨询、系统集成等。公司前身为华中科技大学科研团队，长期从事数据分析的研究和软件开发工作，持续关注技术创新。技术负责人为高级项目管理师，具有深厚的项目管理经验，研发团队均具有10年以上IT系统研发经历，经验丰富。
-      </div>
+      <div
+        class="line-clamp-5 text-content pb-10"
+      >武汉为恩科技公司成立于2018年3月，主要业务为数据分析、软件定制开发、信息化建设咨询、系统集成等。公司前身为华中科技大学科研团队，长期从事数据分析的研究和软件开发工作，持续关注技术创新。技术负责人为高级项目管理师，具有深厚的项目管理经验，研发团队均具有10年以上IT系统研发经历，经验丰富。</div>
       <div class="text-2xl pt-8 pb-6">愿景和使命</div>
-      <ul class="pb-6">
-        <li>技术因分享而更有价值。</li>
-        <li>跟随数字时代，以扎实的技术，为客户提供优质的技术服务，以及打造更好的内容付费平台。</li>
+      <ul class="pb-6 bg1 relative text-white flex flex-col items-center justify-center">
+        <li class="text-3xl pb-12">技术因分享而更有价值。</li>
+        <li class="text-2xl w-9/12">跟随数字时代，以扎实的技术，为客户提供优质的技术服务，以及打造更好的内容付费平台。</li>
       </ul>
       <div class="text-2xl pt-8 pb-6">我们的价值观</div>
       <div class="pb-6">
-        <div class="text-xl pb-4">以奋进者为本</div>
-        <ul>
-          <li>"人才"作为为恩科技的核心资产，人才增值>财务增值</li>
-          <li>对事和对人，坚持长期有耐心</li>
-          <li>开拓，进取，以价值创造为导向，不让分配的天平失衡</li>
-        </ul>
+        <div class="bg2 relative text-white flex flex-col pl-14 pt-14">
+          <div class="text-4xl pb-20">以奋进者为本</div>
+          <ul class="flex flex-col items-start justify-center text-2xl list-disc pl-8 gap-y-4">
+            <li>"人才"作为为恩科技的核心资产，人才增值>财务增值</li>
+            <li>对事和对人，坚持长期有耐心</li>
+            <li>开拓，进取，以价值创造为导向，不让分配的天平失衡</li>
+          </ul>
+        </div>
       </div>
       <div class="pb-6">
         <div class="text-xl pb-4">以用户为中心</div>
@@ -35,12 +49,52 @@
           <li>有契约精神，坚持优秀的职业操守</li>
         </ul>
       </div>
+      <div class="pb-6">
+        <div class="text-xl pb-4">危机意识</div>
+        <ul>
+          <li>坚持自我复盘，不拘泥于现状</li>
+          <li>敢于创新，不惧失败</li>
+          <li>方法远比困难多，勤思考，化腐朽为神奇</li>
+        </ul>
+      </div>
+      <div class="pb-6">
+        <div class="text-xl pb-4">诚信为本</div>
+        <ul>
+          <li>对一切不诚信行为说不</li>
+          <li>敢于直面自己的问题，并积极解决</li>
+          <li>言行一致，实事求是</li>
+        </ul>
+      </div>
+      <div class="pb-6">
+        <div class="text-xl pb-4">团队精神</div>
+        <ul>
+          <li>以共同目标出发，保持团队协作，充分信任队友</li>
+          <li>有担当，遇事不推诿</li>
+          <li>具备同理心，做好倾听者</li>
+        </ul>
+      </div>
       <div class="text-2xl pt-8 pb-6">我们的人才观</div>
+      <div class="pb-6">
+        <div class="text-xl pb-4">学习能力</div>
+        <div>对未知的事物充满好奇，积极主动的学习新知识；具备自我学习能力，遇事主动思考，能根据工作需要，运用各种资源，快速成为某一领域专家。</div>
+      </div>
+      <div class="pb-6">
+        <div class="text-xl pb-4">主人翁意识</div>
+        <div>拒绝“各人自扫门前雪，莫管他人瓦上霜”，具备大局观；能从事物的本质出发，追求长期价值而非短期利益；主动承担责任，以正确的方式积极主动地去解决问题。</div>
+      </div>
+      <div class="pb-6">
+        <div class="text-xl pb-4">逻辑思维</div>
+        <div>实事求是，尊重客观事实；不唯心，不唯上，不随波逐流，敢于质疑权威，做正确的决策；勤于思考，用科学的方法来提升效率和竞争力。</div>
+      </div>
+      <div class="pb-6">
+        <div class="text-xl pb-4">高标准、严要求</div>
+        <div>追求精益求精，拒绝“差不多”；保持对自己的复盘，不安于现状，持续改进自己，追求卓越。</div>
+      </div>
       <div class="text-3xl font-bold pt-8 pb-20">发展历程</div>
       <ul class="mb-12">
         <li>
           <div class="text-2xl font-bold flex">
-            <div class="text-sky-400 mr-8 ">2022</div>
+            <div class="text-sky-400 mr-8">2022</div>
             <div>飞速发展</div>
           </div>
           <ul class="ml-10 pl-20 list-disc border-l-2 border-sky-200 pt-3 pb-10 text-content">
@@ -51,7 +105,7 @@
         </li>
         <li>
           <div class="text-2xl font-bold flex">
-            <div class="text-sky-400 mr-8 ">2021</div>
+            <div class="text-sky-400 mr-8">2021</div>
             <div>深耕优化</div>
           </div>
           <ul class="ml-10 pl-20 list-disc border-l-2 border-sky-200 pt-3 pb-10 text-content">
@@ -63,7 +117,7 @@
         </li>
         <li>
           <div class="text-2xl font-bold flex">
-            <div class="text-sky-400 mr-8 ">2020</div>
+            <div class="text-sky-400 mr-8">2020</div>
             <div>全面布局</div>
           </div>
           <ul class="ml-10 pl-20 list-disc border-l-2 border-sky-200 pt-3 pb-10 text-content">
@@ -75,7 +129,7 @@
         </li>
         <li>
           <div class="text-2xl font-bold flex">
-            <div class="text-sky-400 mr-8 ">2019</div>
+            <div class="text-sky-400 mr-8">2019</div>
             <div>战略升级</div>
           </div>
           <ul class="ml-10 pl-20 list-disc border-l-2 border-sky-200 pt-3 pb-10 text-content">
@@ -87,7 +141,7 @@
         </li>
         <li>
           <div class="text-2xl font-bold flex">
-            <div class="text-sky-400 mr-8 ">2018</div>
+            <div class="text-sky-400 mr-8">2018</div>
             <div>梦想摇篮</div>
           </div>
           <ul class="ml-10 pl-20 list-disc pt-3 pb-10 text-content">
@@ -102,14 +156,56 @@
 </template>
 
 <script>
-export default {
-  setup () {
-    
+// Import Swiper Vue.js components
+import { Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
 
-    return {}
+import { ref } from 'vue'
+
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup () {
+    const images = ref([
+      'https://wayearn.obs.cn-east-2.myhuaweicloud.com/about/%E8%BD%AE%E6%92%AD%E5%9B%BE%E4%B8%80.png',
+      'https://wayearn.obs.cn-east-2.myhuaweicloud.com/about/%E8%BD%AE%E6%92%AD%E5%9B%BE%E4%BA%8C.png',
+      'https://wayearn.obs.cn-east-2.myhuaweicloud.com/about/%E8%BD%AE%E6%92%AD%E5%9B%BE%E4%B8%89.png'
+    ])
+    const onSwiper = (swiper) => {
+      console.log(swiper);
+    };
+    const onSlideChange = () => {
+      console.log('slide change');
+    };
+    return {
+      onSwiper,
+      onSlideChange,
+      modules: [Pagination],
+      images
+    };
+
   }
 }
 </script>
 
 <style lang="scss" scoped>
+.bg1 {
+  background: url("https://wayearn.obs.cn-east-2.myhuaweicloud.com/about/%E6%84%BF%E6%99%AF%E5%92%8C%E4%BD%BF%E5%91%BD.png")
+    no-repeat center center;
+  background-size: contain;
+  width: 100%;
+  height: 31rem;
+}
+.bg2 {
+  background: url("https://wayearn.obs.cn-east-2.myhuaweicloud.com/about/%E4%BB%B7%E5%80%BC%E8%A7%82.png")
+    no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 30rem;
+}
 </style>

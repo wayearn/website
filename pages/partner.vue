@@ -6,7 +6,7 @@
       <ul class="grid grid-cols-3 gap-3 pb-20">
         <li>
           <p class="text-xl font-bold pb-5">业务联系</p>
-          <ul>
+          <ul class="text-gray-500">
             <li>地址：武汉市洪山区樱花大厦A座1803</li>
             <li>邮箱：admin@wayearn.com</li>
             <li>电话：18571754815</li>
@@ -15,7 +15,7 @@
         </li>
         <li>
           <p class="text-xl font-bold pb-5">社交</p>
-          <ul>
+          <ul class="text-gray-500">
             <li>公众号：toimc前端技术</li>
             <li>微信号：toimctech</li>
             <li>扫码关注：</li>
@@ -24,10 +24,10 @@
         </li>
         <li>
           <p class="text-xl font-bold pb-5">抖音</p>
-          <ul>
+          <ul class="text-gray-500">
             <li>抖音：toimc前端技术</li>
             <li>抖音号：toimc</li>
-            <li>扫码关注：</li>
+            <li class="pb-2">扫码关注：</li>
             <li><img src="@/assets/images/douyin.jpeg" alt="" /></li>
           </ul>
         </li>

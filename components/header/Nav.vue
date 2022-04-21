@@ -82,8 +82,6 @@ export default {
     ];
 
     const isActive = (item, path) => {
-      console.log('🚀 ~ file: Nav.vue ~ line 103 ~ isActive ~ item', item);
-      console.log('🚀 ~ file: Nav.vue ~ line 103 ~ isActive ~ path', path);
       let flag = false;
       // if (item.path && item.path.indexOf(path) !== -1) {
       if ((item.path && item.path === path) || path.indexOf(item.path) !== -1) {

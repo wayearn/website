@@ -15,4 +15,4 @@ RUN NODE_ENV=production yarn install --pure-lockfile --non-interactive --product
 
 COPY --from=builder /vue-bd/.output ./.output
 EXPOSE 3000
-ENTRYPOINT [ "npm", "run", "start" ]
+ENTRYPOINT [ "node", ".output/server/index.mjs" ]

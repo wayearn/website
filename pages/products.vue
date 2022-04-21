@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="bg h-96 w-screen"></div>
-    <div class="w-9/12 my-0 mx-auto">
+    <div class="w-7/12 my-0 mx-auto">
       <div class="text-2xl pt-12 pb-6">TOIMC能力开放平台：TOIMC全业务赋能平台</div>
       <div
         class="line-clamp-5 text-content pb-10"
@@ -18,14 +18,14 @@
       </ul>
     </div>
     <div class="bg1 h-96 w-screen">
-      <div class="w-9/12 my-0 mx-auto text-white">
+      <div class="w-7/12 my-0 mx-auto text-white">
         <div class="text-2xl pt-12 pb-6">内容直播服务</div>
         <div
           class="pb-10 w-1/2 text-xs leading-tight"
         >TOIMC内容直播服务可为用户提供内容直播能力，服务易接入、高可用，只需简单几步就可以快速接入直播能力。通过使用横向扩展大规模并行处理 (MPP) 体系结构将数据仓库的数据扩展到千万亿字节级别,并且能够与 Hadoop 等非关系型数据源集成。为用户提供清晰流畅的音视频直播服务。</div>
       </div>
     </div>
-    <div class="w-9/12 my-0 mx-auto">
+    <div class="w-7/12 my-0 mx-auto">
       <div class="text-2xl pt-12 pb-6">全渠道营销平台</div>
       <div
         class="line-clamp-5 text-content pb-10"
@@ -42,7 +42,7 @@
         </li>
       </ul>
     </div>
-    <div class="w-9/12 my-0 mx-auto">
+    <div class="w-7/12 my-0 mx-auto">
       <div class="text-2xl pt-12 pb-8">内容审核开放能力</div>
       <ul class="flex justify-around pb-4 text-content space-x-8">
         <li
@@ -57,14 +57,14 @@
       </ul>
     </div>
     <div class="bg2 h-96 w-screen mb-10">
-      <div class="w-9/12 my-0 mx-auto text-white">
+      <div class="w-7/12 my-0 mx-auto text-white">
         <div class="text-2xl pt-12 pb-6">大数据采集分析能力</div>
         <div
           class="pb-10 w-1/2 text-xs leading-tight"
         >打司机开采集及分析能力具有系统完善，操作便捷等特点，提供了数据采集、数据流转、行政管理等功能，实现了数据采集工作的智慧化化和数字化管理。可以对数据进行各种采样、清洗、分析，提供多种数据展现形式帮助用户直观的对数据进行查看，提供了处理参数修改等功能，可以对数据等多方面进行调节，提高办事效率和服务水平。</div>
       </div>
     </div>
-    <div class="w-9/12 my-0 mx-auto flex space-x-12">
+    <div class="w-7/12 my-0 mx-auto flex space-x-12">
       <div class="bg3 h-96 w-1/2"></div>
       <div class="px-16">
         <div class="text-2xl pt-12 pb-6">TOIMC智能助手</div>

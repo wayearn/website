@@ -1,7 +1,7 @@
 <template>
-  <div class="min-h-screen flex flex-col">
+  <div class="min-h-full flex flex-col">
     <HeaderNav />
-    <div class="flex-1">
+    <div class="flex-1 bg-[#fafdff]">
       <slot></slot>
     </div>
     <FooterDefault />

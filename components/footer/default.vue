@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="footer-wrap w-9/12 my-0 mx-auto">
+    <div class="footer-wrap w-7/12 my-0 mx-auto">
       <ul class="grid grid-cols-3">
         <FooterAbout />
         <FooterLinks />
@@ -14,7 +14,7 @@
 <script>
 export default {
   setup () {
-    
+
 
     return {}
   }

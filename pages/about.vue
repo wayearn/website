@@ -5,14 +5,20 @@
       :slides-per-view="1"
       :space-between="50"
       :pagination="{ clickable: true }"
+      :autoplay="autoplay"
+      loop
       @swiper="onSwiper"
       @slideChange="onSlideChange"
     >
       <swiper-slide v-for="(item, index) in images" :key="index">
-        <img class="w-screen" :src="item" alt />
+        <!-- <img class="w-screen" :src="item" alt /> -->
+        <div
+          class="h-96 w-screen"
+          :style="{ 'background': 'url(' + item + ') no-repeat center center', 'background-size': 'cover' }"
+        ></div>
       </swiper-slide>
     </swiper>
-    <div class="w-9/12 my-0 mx-auto">
+    <div class="w-7/12 my-0 mx-auto">
       <div class="text-3xl font-bold pt-8 pb-6">关于我们</div>
       <div
         class="line-clamp-5 text-content pb-10"
@@ -20,7 +26,7 @@
       <div class="text-2xl pt-8 pb-6">愿景和使命</div>
       <ul class="pb-6 bg1 relative text-white flex flex-col items-center justify-center">
         <li class="text-3xl pb-12">技术因分享而更有价值。</li>
-        <li class="text-2xl w-9/12">跟随数字时代，以扎实的技术，为客户提供优质的技术服务，以及打造更好的内容付费平台。</li>
+        <li class="text-2xl w-7/12">跟随数字时代，以扎实的技术，为客户提供优质的技术服务，以及打造更好的内容付费平台。</li>
       </ul>
       <div class="text-2xl pt-8 pb-6">我们的价值观</div>
       <div class="pb-6">
@@ -157,11 +163,13 @@
 
 <script>
 // Import Swiper Vue.js components
-import { Pagination } from 'swiper';
+import { Autoplay, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
+
 
 import { ref } from 'vue'
 
@@ -177,16 +185,20 @@ export default {
       'https://wayearn.obs.cn-east-2.myhuaweicloud.com/about/%E8%BD%AE%E6%92%AD%E5%9B%BE%E4%B8%89.png'
     ])
     const onSwiper = (swiper) => {
-      console.log(swiper);
+      // console.log(swiper);
     };
     const onSlideChange = () => {
-      console.log('slide change');
+      // console.log('slide change');
     };
     return {
       onSwiper,
       onSlideChange,
-      modules: [Pagination],
-      images
+      modules: [Pagination, Autoplay],
+      images,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false
+      },
     };
 
   }

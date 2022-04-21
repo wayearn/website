@@ -9,8 +9,8 @@
           <ul class="text-gray-500">
             <li>地址：武汉市洪山区樱花大厦A座1803</li>
             <li>邮箱：admin@wayearn.com</li>
-            <li>电话：18571754815</li>
-            <li>微信：toimc_brian</li>
+            <li>电话：18674006815</li>
+            <li>微信：toimc_brian(请注明来意)</li>
           </ul>
         </li>
         <li>

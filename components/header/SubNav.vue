@@ -9,7 +9,7 @@
           :class="$route.path.indexOf(item.path) !== -1 && 'active'"
         >
           <NuxtLink :to="item.path" class="flex items-center">
-            <icon-pay class="pr-1" color="#0ea5e9"></icon-pay>
+            <!-- <Icon icon="ant-design:pay-circle-outlined" /> -->
             <span class="text-zinc-400 hover:text-content">{{
               item.title
             }}</span>
@@ -24,6 +24,7 @@
 import { defineComponent } from 'vue';
 import { useElementHover } from '@vueuse/core';
 import { ref } from 'vue';
+// import { Icon } from '@iconify/vue';
 
 export default defineComponent({
   props: {
@@ -32,6 +33,9 @@ export default defineComponent({
       required: true,
     },
   },
+  // components: {
+  //   Icon,
+  // },
   setup() {
     const hoverElem = ref(null);
     const isHovered = useElementHover(hoverElem);

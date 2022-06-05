@@ -21,7 +21,7 @@ specifiers:
   tailwindcss: ^3.0.24
   ufo: ^0.8.4
   unplugin-icons: ^0.14.3
-  vue: ^3.2.36
+  vue: ^3.2.33
   webpack: ^5.72.1
 
 dependencies:

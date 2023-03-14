@@ -1,14 +1,13 @@
-import { defineNuxtConfig } from 'nuxt';
-
-// https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   css: ['~/assets/css/tailwind.css'],
-  build: {
-    postcss: {
-      postcssOptions: require('./postcss.config.ts'),
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
     },
   },
-  buildModules: [
+  modules: [
     '@pinia/nuxt',
     [
       // todo

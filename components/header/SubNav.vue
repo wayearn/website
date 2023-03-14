@@ -24,6 +24,7 @@
 import { defineComponent } from 'vue';
 import { useElementHover } from '@vueuse/core';
 import { ref } from 'vue';
+
 // import { Icon } from '@iconify/vue';
 
 export default defineComponent({
@@ -38,7 +39,7 @@ export default defineComponent({
   // },
   setup() {
     const hoverElem = ref(null);
-    const isHovered = useElementHover(hoverElem);
+    const isHovered = process.client && useElementHover(hoverElem);
     return {
       hoverElem,
       isHovered,

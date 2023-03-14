@@ -185,19 +185,19 @@ export default {
     ]);
 
     const teams = ref([
-      'https://wayearn.obs.cn-east-2.myhuaweicloud.com/team/1.jpg',
-      'https://wayearn.obs.cn-east-2.myhuaweicloud.com/team/2.jpg',
+      'https://wayearn.static.toimc.com/team/1.jpg',
+      'https://wayearn.static.toimc.com/team/2.jpg',
     ]);
 
     const partners = ref([
-      'https://wayearn.obs.cn-east-2.myhuaweicloud.com/partner/logo1.png',
-      'https://wayearn.obs.cn-east-2.myhuaweicloud.com/partner/logo2.png',
-      'https://wayearn.obs.cn-east-2.myhuaweicloud.com/partner/logo8.png',
-      // 'https://wayearn.obs.cn-east-2.myhuaweicloud.com/partner/logo4.png',
-      'https://wayearn.obs.cn-east-2.myhuaweicloud.com/partner/logo5.png',
-      'https://wayearn.obs.cn-east-2.myhuaweicloud.com/partner/logo6.png',
-      'https://wayearn.obs.cn-east-2.myhuaweicloud.com/partner/logo7.png',
-      'https://wayearn.obs.cn-east-2.myhuaweicloud.com/partner/logo3.png',
+      'https://wayearn.static.toimc.com/partner/logo1.png',
+      'https://wayearn.static.toimc.com/partner/logo2.png',
+      'https://wayearn.static.toimc.com/partner/logo8.png',
+      // 'https://wayearn.static.toimc.com/partner/logo4.png',
+      'https://wayearn.static.toimc.com/partner/logo5.png',
+      'https://wayearn.static.toimc.com/partner/logo6.png',
+      'https://wayearn.static.toimc.com/partner/logo7.png',
+      'https://wayearn.static.toimc.com/partner/logo3.png',
     ]);
 
     // 核心部分悬浮控制
@@ -217,55 +217,55 @@ export default {
         name: '课程助手',
         desc: '提供视频、笔记、答疑、资源等功能',
         image:
-          'https://wayearn.obs.cn-east-2.myhuaweicloud.com/projects/home/%E8%AF%BE%E7%A8%8B%E5%8A%A9%E6%89%8B.jpg',
+          'https://wayearn.static.toimc.com/projects/home/%E8%AF%BE%E7%A8%8B%E5%8A%A9%E6%89%8B.jpg',
       },
       {
         name: '学院App',
         desc: '使用Flutter开发的学院App',
         image:
-          'https://wayearn.obs.cn-east-2.myhuaweicloud.com/projects/home/%E5%AD%A6%E9%99%A2App.jpg',
+          'https://wayearn.static.toimc.com/projects/home/%E5%AD%A6%E9%99%A2App.jpg',
       },
       {
         name: '直播软件',
         desc: '基于Electron的跨端跨平台的直播软件',
         image:
-          'https://wayearn.obs.cn-east-2.myhuaweicloud.com/projects/home/%E7%9B%B4%E6%92%AD%E8%BD%AF%E4%BB%B6.jpg',
+          'https://wayearn.static.toimc.com/projects/home/%E7%9B%B4%E6%92%AD%E8%BD%AF%E4%BB%B6.jpg',
       },
       {
         name: '数据分析平台',
         desc: '智能分析、智能画像和智能运营',
         image:
-          'https://wayearn.obs.cn-east-2.myhuaweicloud.com/projects/home/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B9%B3%E5%8F%B0.jpg',
+          'https://wayearn.static.toimc.com/projects/home/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B9%B3%E5%8F%B0.jpg',
       },
       {
         name: '数据采集与分析平台',
         desc: '基于大数据的采集、处理、分析平台',
         image:
-          'https://wayearn.obs.cn-east-2.myhuaweicloud.com/projects/home/%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E5%88%86%E6%9E%90%E5%B9%B3%E5%8F%B0.jpg',
+          'https://wayearn.static.toimc.com/projects/home/%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E5%88%86%E6%9E%90%E5%B9%B3%E5%8F%B0.jpg',
       },
       {
         name: '内容安全平台',
         desc: '对多媒体等进行检测与审核',
         image:
-          'https://wayearn.obs.cn-east-2.myhuaweicloud.com/projects/home/%E5%86%85%E5%AE%B9%E5%AE%89%E5%85%A8.jpg',
+          'https://wayearn.static.toimc.com/projects/home/%E5%86%85%E5%AE%B9%E5%AE%89%E5%85%A8.jpg',
       },
       {
         name: '课程营销平台',
         desc: '教师可以使用它来制作和销售在线课程',
         image:
-          'https://wayearn.obs.cn-east-2.myhuaweicloud.com/projects/home/%E8%90%A5%E9%94%80%E5%B9%B3%E5%8F%B0.jpg',
+          'https://wayearn.static.toimc.com/projects/home/%E8%90%A5%E9%94%80%E5%B9%B3%E5%8F%B0.jpg',
       },
       {
         name: '综合业务系统',
         desc: '内部项目的流转与流程控制',
         image:
-          'https://wayearn.obs.cn-east-2.myhuaweicloud.com/projects/home/%E7%BB%BC%E5%90%88%E4%B8%9A%E5%8A%A1%E7%B3%BB%E7%BB%9F.jpg',
+          'https://wayearn.static.toimc.com/projects/home/%E7%BB%BC%E5%90%88%E4%B8%9A%E5%8A%A1%E7%B3%BB%E7%BB%9F.jpg',
       },
       {
         name: '创作者服务平台',
         desc: '提供授权、内容、互动及数据管理服务',
         image:
-          'https://wayearn.obs.cn-east-2.myhuaweicloud.com/projects/home/%E5%88%9B%E4%BD%9C%E8%80%85%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0.jpg',
+          'https://wayearn.static.toimc.com/projects/home/%E5%88%9B%E4%BD%9C%E8%80%85%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0.jpg',
       },
     ]);
 
@@ -292,7 +292,7 @@ export default {
 }
 
 .bg {
-  background: url('https://wayearn.obs.cn-east-2.myhuaweicloud.com/home/banner%402x.png')
+  background: url('https://wayearn.static.toimc.com/home/banner%402x.png')
     no-repeat top center;
   background-size: cover;
 }

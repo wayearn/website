@@ -48,7 +48,8 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .bg {
-  background: url('https://wayearn.obs.cn-east-2.myhuaweicloud.com/partner/bg-2x.jpg') no-repeat center center;
+  background: url('https://wayearn.static.toimc.com/partner/bg-2x.jpg')
+    no-repeat center center;
   background-size: cover;
 }
 </style>

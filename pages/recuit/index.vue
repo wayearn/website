@@ -34,7 +34,7 @@ export default {
 
 <style lang="scss" scoped>
 .bg {
-  background: url('https://wayearn.obs.cn-east-2.myhuaweicloud.com/recuit/%E4%B8%BA%E6%81%A9%E7%A7%91%E6%8A%801.gif')
+  background: url('https://wayearn.static.toimc.com/recuit/%E4%B8%BA%E6%81%A9%E7%A7%91%E6%8A%801.gif')
     no-repeat center center;
   background-size: cover;
 }

@@ -34,6 +34,7 @@ dependencies:
   pinia: 2.0.33_vue@3.2.47
   swiper: 9.1.0
   vue: 3.2.47
+  vue-router: 4.1.6_vue@3.2.47
 
 devDependencies:
   '@iconify/json': 2.2.34
@@ -49,7 +50,6 @@ devDependencies:
   tailwindcss: 3.2.7_postcss@8.4.21
   ufo: 1.1.1
   unplugin-icons: 0.15.3
-  vue-router: 4.1.6_vue@3.2.47
   webpack: 5.76.1
 
 packages:
@@ -6462,7 +6462,6 @@ packages:
     dependencies:
       '@vue/devtools-api': 6.5.0
       vue: 3.2.47
-    dev: true
 
   /vue/3.2.47:
     resolution: {integrity: sha512-60188y/9Dc9WVrAZeUVSDxRQOZ+z+y5nO2ts9jWXSTkMvayiWxCWOWtBQoYjLeccfXkiiPZWAHcV+WTPhkqJHQ==}

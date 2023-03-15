@@ -1,8 +1,8 @@
 FROM node:18 as builder
 WORKDIR /vue-bd
-COPY package*.json ./
-RUN yarn install --prefer-offline --pure-lockfile --non-interactive --production=false --registry=https://registry.npmmirror.com
+# COPY package*.json ./
 COPY . .
+RUN yarn install --prefer-offline --pure-lockfile --non-interactive --production=false --registry=https://registry.npmmirror.com
 RUN yarn generate
 
 FROM node:lts-alpine
